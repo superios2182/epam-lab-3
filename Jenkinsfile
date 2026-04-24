@@ -22,7 +22,7 @@ pipeline {
         }
         stage('Docker Build') {
             steps {
-                sh "docker build --network=host -t ${IMAGE_NAME} .""
+                sh "docker build --network=host -t ${IMAGE_NAME} ."
             }
         }
         stage('Deploy') {
